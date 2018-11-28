@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/commonBackgroundColor"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="83dp">
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="64dp"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/login_logo"/>
+    </RelativeLayout>
+
+    <!-- 账号密码输入框 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/logininput"
+        android:orientation="vertical"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="21sp"
+                android:textColor="@color/commonTextColor"
+                android:hint="请输入您的6-15位登录账号"
+                android:layout_marginLeft="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:background="@null"
+                android:id="@+id/login_edit_text_account"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/commonBoarderColor"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="21sp"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:textColor="@color/commonTextColor"
+                android:hint="请输入您的6-15位登录密码"
+                android:layout_marginLeft="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:id="@+id/login_edit_text_password" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="41dp" />
+    </RelativeLayout>
+
+</LinearLayout>
