@@ -7,8 +7,8 @@
     <color name="commonBackgroundColor">#FAFAFA</color>
     <color name="commonBoarderColor">#EFEFEF</color>
 
-    <color name="mainThemeColor">#AD1333</color>
-
+    <color name="mainThemeColor">#D14232</color>
+    <color name="mainHightColor">#AD1333</color>
     <!-- 文本颜色 -->
     <color name="commonTextColor">#333333</color>
     <color name="commonGlayTextColor">#888888</color>

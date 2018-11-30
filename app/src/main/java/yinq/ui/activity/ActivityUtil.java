@@ -41,5 +41,6 @@ public class ActivityUtil {
     public void intentAcitvity(Class c){
         Intent intent = new Intent(topActivity, c);
         topActivity.startActivity(intent);
+
     }
 }

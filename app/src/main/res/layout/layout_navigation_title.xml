@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:background="@color/mainThemeColor"
+    android:orientation="horizontal">
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/navigation_back_button"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="标题栏"
+        android:id="@+id/navigation_title"
+        android:textSize="21sp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="marquee"/>
+
+</RelativeLayout>

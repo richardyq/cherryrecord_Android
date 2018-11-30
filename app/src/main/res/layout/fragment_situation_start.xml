@@ -1,0 +1,53 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:id="@+id/situation_switch_tab_radio_group"
+        >
+        <RadioButton
+            style="@style/switch_tab_item"
+            android:text="吃饭"
+            android:checked="true"
+            android:background="@drawable/switch_tab_selector"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:button="@null"
+            android:id="@+id/situation_switch_tab_radio_meal"/>
+        <RadioButton
+            style="@style/switch_tab_item"
+            android:text="睡觉"
+            android:background="@drawable/switch_tab_selector"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:button="@null"
+            android:id="@+id/situation_switch_tab_radio_sleep"/>
+        <RadioButton
+            style="@style/switch_tab_item"
+            android:text="兴趣学习"
+            android:background="@drawable/switch_tab_selector"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:button="@null"
+            android:id="@+id/situation_switch_tab_radio_interest"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/situation_content_fragmetn">
+
+
+    </FrameLayout>
+</LinearLayout>

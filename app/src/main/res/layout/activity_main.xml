@@ -1,18 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.yinq.cherrydialyrecord.MainActivity">
+    android:background="@color/commonBackgroundColor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <include layout="@layout/layout_navigation_title"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#FFF"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/main_start_tabbar">
+            <RadioButton
+                android:id="@+id/main_tab_rd_home"
+                style="@style/main_tab_item"
+                android:drawableTop="@drawable/main_tab_today_item"
+                android:text="今日"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/main_tab_rd_history"
+                style="@style/main_tab_item"
+                android:drawableTop="@drawable/main_tab_history_item"
+                android:text="历史"
+                />
+            <RadioButton
+                android:id="@+id/main_tab_rd_person"
+                style="@style/main_tab_item"
+                android:drawableTop="@drawable/main_tab_person_item"
+                android:text="我的"
+                />
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/commonBoarderColor"
+            android:layout_above="@id/main_start_tabbar"
+            android:id="@+id/main_tab_line"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_start_content_fragment"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/main_tab_line" />
+
+    </RelativeLayout>
+</LinearLayout>
